@@ -1,3 +1,5 @@
+libhv gui demo using Qt.
+
 # Build
 
 ## Install Qt
@@ -22,16 +24,21 @@ cmake . -G "MinGW Makefiles" -DCMAKE_MAKE_PROGRAM=mingw32-make -Bbuild/mingw64
 cmake --build build/mingw64
 ```
 
-## Build examples/qt
+## Build QtDemo
 ```shell
-cd examples/qt/server
+git clone https://github.com/hv-projects/QtDemo
+cd QtDemo
+```
+
+```
+cd server
 qmake
 mingw32-make
 windeployqt.exe release
 ```
 
 ```shell
-cd examples/qt/client
+cd client
 qmake
 mingw32-make
 windeployqt.exe release
