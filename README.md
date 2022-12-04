@@ -43,3 +43,11 @@ qmake
 mingw32-make
 windeployqt.exe release
 ```
+
+# Release
+
+see [release](./release)
+
+# Run
+
+![QtDemo.png](./QtDemo.png)
